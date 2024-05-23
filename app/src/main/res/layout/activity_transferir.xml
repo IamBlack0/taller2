@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FEFEFE"
+    tools:context=".Transferir">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:text="Saldo a favor:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/txtSaldo"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transferencia:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/txtTransferencia"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="La suma:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp" />
+
+    <EditText
+        android:id="@+id/txtLaSuma"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:inputType="numberDecimal"
+        android:elevation="2dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banco:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:paddingTop="16dp" />
+
+    <Spinner
+        android:id="@+id/SpinnerBanco"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#333333"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:elevation="2dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transferir"
+        android:onClick="GuardarTransferencia"
+        android:backgroundTint="#2573A2"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:layout_marginTop="24dp"
+        android:elevation="4dp" />
+
+</LinearLayout>

@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#FEFEFE"
+    tools:context=".Confirmar">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar transacción"
+        android:gravity="center"
+        android:textSize="24sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium"
+        android:paddingBottom="24dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Transferir:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/txtTranferir"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:inputType="numberDecimal"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="A favor de:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/txtNombreCuenta"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Banco:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/txtNombreBanco"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:layout_marginBottom="16dp" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Fecha/Hora:"
+        android:textSize="18sp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif-medium" />
+
+    <TextView
+        android:id="@+id/date_time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#ffffff"
+        android:padding="10dp"
+        android:textColor="#333333"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:elevation="2dp"
+        android:layout_marginBottom="24dp" />
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Confirmar"
+        android:onClick="ConfirmarTransacion"
+        android:backgroundTint="#2573A2"
+        android:textColor="#ffffff"
+        android:fontFamily="sans-serif-medium"
+        android:padding="16dp"
+        android:elevation="4dp" />
+
+</LinearLayout>
